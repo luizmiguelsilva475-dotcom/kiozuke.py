@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiozuke Music | O Próximo Nível</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap');
+
+        :root {
+            --primary: #5865f2;
+            --accent: #00d2ff;
+            --bg: #0a0a0c;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Navbar estilo profissional */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            background: rgba(0,0,0,0.8);
+            backdrop-filter: blur(10px);
+            position: fixed;
+            width: 80%;
+            z-index: 1000;
+        }
+
+        .logo { font-weight: 900; font-size: 1.5rem; color: var(--primary); }
+
+        /* Hero Section (Igual ao Lunar Client) */
+        .hero {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: radial-gradient(circle at center, rgba(88, 101, 242, 0.15) 0%, transparent 70%);
+            text-align: center;
+        }
+
+        .bot-avatar {
+            width: 180px;
+            height: 180px;
+            border-radius: 30px; /* Estilo arredondado moderno */
+            transform: rotate(-5deg);
+            border: 4px solid var(--primary);
+            box-shadow: 0 20px 50px rgba(0,0,0,0.8);
+            margin-bottom: 30px;
+            transition: 0.5s;
+        }
+
+        .bot-avatar:hover { transform: rotate(0deg) scale(1.1); }
+
+        h1 { font-size: 4rem; margin: 0; text-transform: uppercase; letter-spacing: -2px; }
+        h1 span { color: var(--primary); }
+
+        .subtitle { font-size: 1.2rem; color: #888; max-width: 600px; margin: 20px 0; }
+
+        /* Botão Estilo Premium */
+        .btn-main {
+            background: linear-gradient(45deg, var(--primary), var(--accent));
+            color: white;
+            text-decoration: none;
+            padding: 18px 45px;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: 0.3s;
+            box-shadow: 0 10px 30px rgba(88, 101, 242, 0.4);
+        }
+
+        .btn-main:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(88, 101, 242, 0.6);
+        }
+
+        /* Seção de Features */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            padding: 100px 10%;
+            background: #0f0f12;
+        }
+
+        .card {
+            background: #16161a;
+            padding: 30px;
+            border-radius: 20px;
+            border: 1px solid #222;
+            transition: 0.3s;
+        }
+
+        .card:hover { border-color: var(--primary); background: #1c1c21; }
+
+        .card h3 { color: var(--primary); margin-top: 0; }
+
+        footer { text-align: center; padding: 50px; color: #444; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">KIOZUKE</div>
+        <div class="menu">O Melhor Bot de Música</div>
+    </nav>
+
+    <section class="hero">
+        <img src="https://i.pinimg.com/736x/1f/03/a4/1f03a48167df453bce913fbefd7e850d.jpg" class="bot-avatar" alt="Kiozuke">
+        <h1>KIO<span>ZUKE</span></h1>
+        <p class="subtitle">Uma experiência sonora imersiva para o seu servidor Discord. Alta fidelidade, zero delay e totalmente gratuito.</p>
+        <a href="https://discord.com/oauth2/authorize?client_id=1473469119277039686&permissions=8&integration_type=0&scope=bot" class="btn-main">ADICIONAR AO DISCORD</a>
+    </section>
+
+    <section class="features">
+        <div class="card">
+            <h3>YouTube Stream</h3>
+            <p>Integração total com o YouTube para tocar qualquer música, live ou playlist instantaneamente.</p>
+        </div>
+        <div class="card">
+            <h3>High Quality</h3>
+            <p>Áudio processado em 320kbps via FFmpeg para a melhor fidelidade sonora possível.</p>
+        </div>
+        <div class="card">
+            <h3>Zero Lag</h3>
+            <p>Servidores otimizados para garantir que sua música nunca trave durante a jogatina.</p>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Kiozuke Music. Não afiliado ao Discord ou YouTube.
+    </footer>
+
+</body>
+</html>
